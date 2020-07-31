@@ -1,0 +1,134 @@
+body{
+  font-family: 'Source code pro', Calibri, serif;  
+  margin: 0px;
+  padding: 0px;
+  background-image: url(jacques-barbary.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    background-color: #849268;
+}
+
+
+nav > ul{
+margin: 0px;
+padding: 0px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li a{
+    padding: 20px 30px;
+    color: #fff;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li{
+   list-style-type: none;
+}
+
+.sous-menu{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .sous-menu{
+display: inline-block;
+position: absolute;
+top: 100%;
+left: 0px;
+padding: 0px;
+z-index: 1000;
+}
+
+.sous-menu li{
+    border-bottom: 1px solid #ccc;
+}
+
+.sous-menu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #181a25;
+    width: 270px;
+}
+
+.menu-acceuil:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-blog:hover{
+    border-top: 5px solid #1683cc;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-apropos:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.menu-agenda:hover{
+    border-top: 5px solid rgb(41, 167, 25);
+    background-color: rgb(33, 165, 33, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid rgb(61, 60, 60);
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.menu-acceuil .sous-menu{
+    background-color: RGB(230, 100, 40);
+}
+
+.menu-blog .sous-menu{
+    background-color: RGB(000, 160, 240);
+}
+
+.menu-apropos .sous-menu{
+    background-color: RGB(250, 215, 100);
+}
+
+.menu-agenda .sous-menu{
+    background-color: rgb(48, 214, 48);
+}
+
+.sous-menu li:hover a{
+  color: #eee;  
+  font-weight: bold;
+}
+
+.menu-acceuil .sous-menu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+
+.menu-blog .sous-menu li:hover{
+    background-color: RGB(000, 115, 200);
+}
+
+.menu-apropos .sous-menu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-agenda .sous-menu li:hover{
+    background-color: rgb(56, 184, 30);
+}
